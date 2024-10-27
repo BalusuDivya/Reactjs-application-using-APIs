@@ -1,0 +1,109 @@
+/* HomePage.css */
+html, body {
+    height: 100%; /* Ensure the html and body occupy full height */
+    margin: 0; /* Remove default margin */
+}
+
+.home-container {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color: #333;
+    height: 100vh; /* Make the container occupy the full viewport height */
+    display: flex;
+    flex-direction: column; /* Use column layout to stack sections */
+    background-color: #f5f5f5; /* Light gray background for the entire page */
+    background-image: url('https://images.pexels.com/photos/415078/pexels-photo-415078.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Background image for the whole container */
+    background-size: cover; /* Make the background image cover the whole area */
+    background-attachment: fixed; /* Fix the background image for a nice scrolling effect */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(44, 62, 80, 0.9); /* Dark navbar with slight transparency */
+    color: #ecf0f1;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero-section {
+    padding: 80px 20px;
+    flex-grow: 1; /* Allow the hero section to grow and take available space */
+    background-image: url('https://source.unsplash.com/1600x900/?books'); /* Background image for the hero section */
+    background-size: cover; /* Make the background image cover the whole hero section */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better text readability */
+}
+
+.hero-section h2 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    font-size: 1em;
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d35400;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #ecf0f1;
+    border-top: 5px solid #e67e22; /* Top border for better separation */
+}
+
+.feature {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center; /* Center align footer text */
+}
